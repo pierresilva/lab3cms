@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-echo "this is my first document in thes proyect";
+echo "this is my first document in this proyect";
 
 /* Le hago un cambio nuevo....
  * pero le puedo hace mas cambios...
