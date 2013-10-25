@@ -1,0 +1,149 @@
+<!-- INCLUDE header -->
+<!-- INCLUDE slider -->
+<!-- Start Intro Box -->
+<section id="intro-box" class="margin-80">
+	<div class="container">
+    	<div class="row">
+        	<div class="span12">
+            	<h3>
+                    <!-- BLOCK intro-block -->
+                    We bring a personal and effective approach to every project we work on, which is why our clients love us and why they keep coming back.
+                    <!-- END BLOCK intro-block -->
+                </h3>
+                <span class="arrow"></span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Intro Box -->
+
+<!-- Start Services Box -->
+<section id="services-box" class="margin-80">
+	<div class="container">
+    	<div class="row">
+        	<div class="span4">
+                    <!-- BLOCK services-1 -->
+            	<a class="box" href="#">
+                	<div class="icon">
+                    	<i class="font-icon-adjust"></i>
+                    </div>
+                    <h4>Fresh and Clean Design</h4>
+                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                </a>
+                    <!-- END BLOCK services-1 -->
+            </div>
+            
+            <div class="span4">
+                <!-- BLOCK services-2 -->
+            	<a class="box" href="#">
+                	<div class="icon">
+                    	<i class="font-icon-cog"></i>
+                    </div>
+                    <h4>Easily Customization</h4>
+                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                </a>
+                <!-- END BLOCK services-2 -->
+            </div>
+            
+            <div class="span4">
+                <!-- BLOCK services-3 -->
+            	<a class="box" href="#">
+                	<div class="icon">
+                    	<i class="font-icon-resize-small"></i>
+                    </div>
+                    <h4>Fully Responsive</h4>
+                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                </a>
+                <!-- END BLOCK services-3 -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Services Box -->
+
+<!-- Start Latest Works -->
+<section id="latest-work">
+	<span class="arrow-down"></span>
+    <span class="arrow"></span>
+	
+    <div class="container">
+            <div class="row">
+            	<div class="span12">
+                	<h3>{lang:page_latest} {lang:page_works}</h3>
+                </div>
+            </div>
+            
+            <div class="row">
+            
+                <ul id="latest-work-thumbs">       
+                    <!-- MODULE page/page/latest AS latest_works VARS return=array,items=6,category=works -->
+                    <!-- BEGIN latest_works -->
+                    <li class="work-item-thumbs span4">
+                    	<h5>
+                            <a href="{latest_works.url}" >{latest_works.title}</a>
+                            <span class="arrow-port"></span>
+                        </h5>
+                        
+                        <a class="hover-wrap fancybox" href="{latest_works.image_url|thumb_big}" data-fancybox-group="gallery" title="{latest_works.title}">
+                            <img src="{latest_works.image_url|thumb_small}" alt="{latest_works.image_description}" />
+                            <div class="overlay"></div>
+                            <i class="font-icon-plus"></i>
+                        </a>
+                    </li>
+                    <!-- END latest_works -->
+                    <!-- END MODULE page/page/latest -->                          
+                </ul>
+                
+            </div>
+            
+
+    </div>
+</section>
+<!-- End Latest Works -->
+
+<!-- Start Latest Posts -->
+<section id="latest-blog">
+	<div class="container">
+    
+    	<div class="row">
+        	<div class="span12">
+        		<h3>{lang:page_latest} {lang:page_posts}</h3>
+        	</div>
+        </div>
+            
+        <div class="row">
+        <!-- MODULE page/page/lastets AS latest_blog VARS return=array,items=3,category=blog -->
+        <!-- BEGIN latest_blog -->
+            <article class="post span4">
+                <div class="post-thumb">
+                    <a class="hover-post" href="{latest_blog.url}" >
+                        <img src="{latest_blog.image|thumb_small}" alt="{latest_blog.title}" />
+                        <div class="overlay"></div>
+                        <i class="font-icon-link"></i>
+                    </a>
+                </div>
+                
+                <h2 class="entry-title">
+                    <a href="{latest_blog.url}" >{last_blog.title}</a>
+                </h2>
+                    
+                <div class="entry-content">
+                    <p>{latest_blog.content|textabbr}</p>
+                </div>
+                    
+                <div class="entry-meta">
+                    <span class="published">{latest_blog|humandate}</span>
+                    <span class="divider">/</span>
+                    <a href="{latest_blog.url}" >{latest_blog.comments_count} {lang:page_comments}</a>
+                </div>
+                <div class="separator"></div>
+            </article>
+        <!-- END latest_blog -->
+        <!-- END MODULE page/page/lastets -->            
+                  
+        </div>
+        
+    </div>
+</section>
+<!-- End Latest Posts -->
+<!-- INCLUDE footer -->
